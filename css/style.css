@@ -1,0 +1,143 @@
+/*tar bort all margin som funnits som standard*/
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(122, 1, 1);
+}
+
+nav a {
+    width: 10%;
+    /*tar bort det understrukna i länkarna*/
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*Ändrar färg på länk till röd när man håller över*/
+nav a:hover {
+    color: red;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Flex: 1 för att containern ska stretcha hela sidan*/
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+    width: 100%;
+    height: 60px;
+    /*Gör så att footern inte hamnar i object utan håller sig en bit under.*/
+    margin-top: 70px;
+}
+/*Lägger rubrik i mitten*/
+h1 {
+    text-align: center;
+}
+
+.company-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.company-info img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+/*Wrap för den ska lägga sig undder när den är slut på raden*/
+.product-container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 370px;
+    /*Använde en widthen och marginen så att varje product div blir runt 33%. Det gör att det ligger 3 produkter per rad.*/
+    width: 23%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    border: 2px;
+    border-style: groove;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.697);
+}
+
+.product-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.product button {
+    border-radius: 20px;
+    background-color: red;
+    width: 20%;
+}
+
+/*logo-img och logo-img:hover för att göra så att bilden blir större när man håller över*/
+/*padding 2.5px för att den sedan när man håller över ska bli 0px padding men 2.5px på varje sida större*/
+.logo-img{
+    height: 95px;
+    width: 95px;
+    padding: 2.5px;
+}
+
+.logo-img:hover {
+    padding: 0px;
+    height: 100px;
+    width: 100px;
+}
+
+.about-text {
+    width: 70%;
+}
+
+.contact-text{
+    width: 70%;
+    align-self: center;
+    text-align: center;
+}
+
+.map-img{
+    height: 450px;
+}
+
+.documentation-img{
+    /*Align-self center placerar detta object i mitten*/
+    align-self: center;
+    border-radius: 10px;
+    border-top: 20px;
+}
